@@ -2,13 +2,8 @@ import os
 import requests
 from dotenv import load_dotenv
 import smtplib
-import yfinance as yf
-
 
 ticker_symbol = "AAPL"
-ticker = yf.Ticker(ticker_symbol)
-# current_price = ticker.history(period="1d")['Close'][-1]  # Not used, using Finnhub API instead
-
 
 load_dotenv()
 API_KEY = os.getenv("FINNHUB_API_KEY")
